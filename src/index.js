@@ -3,7 +3,7 @@
 function makeExchange(currency) {
 	if(currency > 10000) {
 		return {error: "You are rich, my friend! We don't have so much coins for exchange"};
-	} else if (currency < 0){
+	} else if (currency == 0){
 		return {};
 	} else {
 		var H = currency / 50;
