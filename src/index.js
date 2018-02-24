@@ -1,5 +1,5 @@
 // PLEASE DON'T change function name
-//module.exports =
+module.exports =
  function makeExchange(currency) {
 	if(currency > 10000) {
 		return {error: "You are rich, my friend! We don't have so much coins for exchange"};
@@ -50,4 +50,4 @@
 	return this;
 }
 
-console.log(makeExchange(90));
+//console.log(makeExchange(90));
