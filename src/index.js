@@ -19,7 +19,7 @@ module.exports =
 
 		if ( Q >= 1){
 			Q = Math.floor(Q);
-			this.Q = Q;
+			obj.Q = Q;
 		} else Q = 0;
 
 		t = t - Q * 25;
@@ -27,7 +27,7 @@ module.exports =
 
 		if ( D >= 1) {
 			D = Math.floor(D);
-			this.D = D;
+			obj.D = D;
 		} else D = 0;
 
 		t = t - D * 10;
@@ -35,7 +35,7 @@ module.exports =
 
 		if ( N >= 1 ) {
 			N = Math.floor(N);
-			this.N = N;
+			obj.N = N;
 		} else N = 0;	
 		
 		t = t - N * 5;
@@ -43,7 +43,7 @@ module.exports =
 
 		if ( P >= 1 ) {
 			P = Math.floor(P);
-			this.P = P;
+			obj.P = P;
 		} else P = 0;	
 
 	}
