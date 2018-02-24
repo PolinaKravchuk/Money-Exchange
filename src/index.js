@@ -2,6 +2,7 @@
 module.exports =
  function makeExchange(currency) {
 	if(currency > 10000) {
+		var obj = {};
 		return {error: "You are rich, my friend! We don't have so much coins for exchange"};
 	} else if (currency == 0){
 		return {};
@@ -10,7 +11,7 @@ module.exports =
 		var H = currency / 50;
 		if ( H >= 1){
 			H = Math.floor(H);
-			this.H = H;
+			obj.H = H;
 		} else H = 0;
 
 		var t = currency - H * 50;
@@ -47,7 +48,7 @@ module.exports =
 
 	}
 
-	return this;
+	return obj;
 }
 
 //console.log(makeExchange(90));
